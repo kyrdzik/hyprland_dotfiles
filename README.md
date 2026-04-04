@@ -12,13 +12,18 @@ My personal Arch Linux + Hyprland configuration.
 - **Wallpaper**: awww
 
 ## Install
-Make sure you have `yay` installed, then run:
+Clone the repo and run the install script:
 \```bash
 git clone git@github.com:kyrdzik/hyprland_dotfiles.git ~/dotfiles
 cd ~/dotfiles
 chmod +x install.sh
 ./install.sh
 \```
+
+The install script will:
+- Install all dependencies using pacman
+- Copy all config files to the correct locations
+- Set zsh as the default shell
 
 ## Keybindings
 | Key | Action |
@@ -27,3 +32,4 @@ chmod +x install.sh
 | SUPER + B | Open Waybar |
 | XF86MonBrightnessUp/Down | Brightness +/- 10% |
 | XF86AudioRaiseVolume/LowerVolume | Volume +/- 5% |
+| XF86AudioMute | Mute audio |

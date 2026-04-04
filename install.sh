@@ -17,14 +17,10 @@ sudo pacman -S --needed \
     pipewire \
     pipewire-pulse \
     playerctl \
-    iwd
-
-yay -S --needed \
+    iwd \
     awww \
-    obsidian
-
-echo "Installing oh-my-zsh..."
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    git \
+    base-devel
 
 echo "Copying dotfiles..."
 cp -r hypr ~/.config/
