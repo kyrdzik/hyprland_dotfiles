@@ -7,7 +7,6 @@ sudo pacman -S --needed \
     kitty \
     waybar \
     hyprland \
-    hyprpaper \
     blueman \
     brightnessctl \
     networkmanager \
@@ -19,6 +18,9 @@ sudo pacman -S --needed \
     playerctl \
     iwd \
     awww \
+    rofi-wayland \
+    obsidian \
+    obs-studio \
     git \
     base-devel
 
@@ -28,6 +30,7 @@ cp -r waybar ~/.config/
 cp -r kitty ~/.config/
 cp starship.toml ~/.config/
 cp .zshrc ~/
+cp -r rofi ~/.config/
 
 echo "Setting zsh as default shell..."
 chsh -s /bin/zsh
