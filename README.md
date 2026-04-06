@@ -2,6 +2,11 @@
 
 My personal Arch Linux + Hyprland configuration.
 
+# Preview
+![Desktop](screenshots/2026-04-06_16-00-07.png)
+![Yazi](screenshots/2026-04-06_16-00-34.png)
+![Terminal](screenshots/2026-04-06_16-00-56.png)
+
 ## Setup
 - **OS**: Arch Linux
 - **WM**: Hyprland
