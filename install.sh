@@ -22,6 +22,7 @@ sudo pacman -S --needed \
     obsidian \
     obs-studio \
     git \
+    sddm \
     base-devel
 
 echo "Copying dotfiles..."
@@ -34,5 +35,10 @@ cp -r rofi ~/.config/
 
 echo "Setting zsh as default shell..."
 chsh -s /bin/zsh
+
+echo "Installing SDDM theme..."
+sudo git clone https://github.com/keyitdev/sddm-astronaut-theme.git /usr/share/sddm/themes/sddm-astronaut-theme
+sudo bash -c 'echo -e "[Theme]\nCurrent=sddm-astronaut-theme" > /etc/sddm.conf'
+sudo systemctl enable sddm
 
 echo "Done! Please reboot."
